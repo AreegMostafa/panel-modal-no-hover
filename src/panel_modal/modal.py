@@ -126,10 +126,10 @@ class Modal(ReactiveHTML, NamedListLike):  # pylint: disable=too-many-ancestors
    # is_open = param.Boolean(doc="Whether or not the modal is open.")
    # show_close_button = param.Boolean(True, doc="Whether to show a close button in the modal")
 
-    open = param.Event()
-    close = param.Event()
-    is_open = param.Boolean()
-    show_close_button = param.Boolean(True)
+    open = param.Event(doc="")
+    close = param.Event(doc="")
+    is_open = param.Boolean(doc="")
+    show_close_button = param.Boolean(True, doc="")
 
     style = param.String(STYLE, doc="The css styles applied to the modal")
 
