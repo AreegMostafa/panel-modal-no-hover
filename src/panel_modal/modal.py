@@ -121,10 +121,15 @@ class Modal(ReactiveHTML, NamedListLike):  # pylint: disable=too-many-ancestors
         pn.Column(modal.param.open, modal).servable()
     """
 
-    open = param.Event(doc="Trigger this to open the modal.")
-    close = param.Event(doc="Trigger this to close the modal.")
-    is_open = param.Boolean(doc="Whether or not the modal is open.")
-    show_close_button = param.Boolean(True, doc="Whether to show a close button in the modal")
+   # open = param.Event(doc="Trigger this to open the modal.")
+   # close = param.Event(doc="Trigger this to close the modal.")
+   # is_open = param.Boolean(doc="Whether or not the modal is open.")
+   # show_close_button = param.Boolean(True, doc="Whether to show a close button in the modal")
+
+    open = param.Event()
+    close = param.Event()
+    is_open = param.Boolean()
+    show_close_button = param.Boolean(True)
 
     style = param.String(STYLE, doc="The css styles applied to the modal")
 
